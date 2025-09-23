@@ -11,12 +11,11 @@ Simple Node.js + Express + MongoDB API to manage Company data with search and fi
 ## Setup (backend)
 
 1. Clone repo
-2. `cd companies-api`
+2. `cd companies-api-development`
 3. `cp .env.example .env` and update `MONGO_URI` with your MongoDB Atlas connection string
 4. `npm install`
-5. Seed sample data (optional): `npm run seed`
-6. Start: `npm run dev` (requires nodemon) or `npm start`
-
+5. Start: `npm run dev` (requires nodemon) or `npm start`
+   
 API base: `http://localhost:5000/api/companies`
 
 ## Example requests
