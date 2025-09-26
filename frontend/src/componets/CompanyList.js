@@ -10,7 +10,7 @@ const CompanyList = ({ filters }) => {
       try {
         const query = new URLSearchParams(filters).toString();
         const res = await axios.get(
-          `${process.env.REACT_APP_BACKEND_API_URL}/companies?${query}`
+          `${process.env.REACT_APP_BACKEND_API_URL}/api/companies?${query}`
         );
 
         if (res.data.length === 0) {
@@ -90,4 +90,5 @@ const CompanyList = ({ filters }) => {
 };
 
 export default CompanyList;
+
 
